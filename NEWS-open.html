@@ -3,15 +3,16 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="mainStyle.css" />
-		<link rel="stylesheet" type="text/css" href="navStyle.css" />
-		<link rel="stylesheet" type="text/css" href="formStyle.css" />
-		<link rel="stylesheet" type="text/css" href="sitemapStyle.css" />
-		<link rel="stylesheet" type="text/css" href="mobileStyle.css" />
+		<link rel="stylesheet" type="text/css" href="Styles/mainStyle.css" />
+		<link rel="stylesheet" type="text/css" href="Styles/navStyle.css" />
+		<link rel="stylesheet" type="text/css" href="Styles/formStyle.css" />
+		<link rel="stylesheet" type="text/css" href="Styles/sitemapStyle.css" />
+		<link rel="stylesheet" type="text/css" href="Styles/mobileStyle.css" />
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script defer type="text/javascript" src="Scripts/hover.js"></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
-			rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"	rel="stylesheet"/>
+		<script defer src="Scripts/validation.js"></script>
 		<title>News</title>
 	</head>
 	<body>
@@ -22,13 +23,11 @@
 					<a href="https://www.instagram.com/officialflatearthsociety/?hl=en">Fake news</a>
 				</div>
 				<div class="logo">
-					<a href="NEWS-open.html"><img src="logo2.png" id="logoto"></a>
+					<a href="NEWS-open.html"><img src="Images/logo2.png" id="logoto"></a>
 				</div>
 			</div>
-
-			<div class="main">
-				
-				<div class="news1"> 
+			<div class="main" id="main">
+				<div class="news1" id="news1"> 
 					<h3>News 1</h3> <hr class="hrs"><br> 
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 					Eius saepe ducimus delectus quidem pariatur, repellendus temporibus
@@ -48,12 +47,12 @@
 					placeat enim! Quos, officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 					Voluptas hic iste nostrum odit soluta itaque eveniet fuga quos quibusdam dolorum!
 				</div>
-				<div class="news2">
+				<div class="news2" id="news2">
 					<h3>News2</h3><hr class="hrs"><br>
 					<div class="news2Container">
 						
 						
-						<img src="2img.png" id="img2">
+						<img src="Images/2img.png" id="img2">
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
 							Eaque tempora quasi quos nam. Quas obcaecati sunt nulla, commodi 
 							corrupti quo officiis consequatur dolores aut sequi, aperiam ut 
@@ -82,7 +81,7 @@
 							amet consectetur adipisicing elit. Quis, incidunt?
 						</div>
 				</div>		
-				<div class="news3">
+				<div class="news3" id="news3">
 					<h2>News 3</h2> <hr class="hrs"><br> 
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi libero 
 					alias tempora assumenda ea eveniet at accusantium eos ratione reiciendis
@@ -104,7 +103,7 @@
 					totam modi odio corporis incidunt esse odit quam voluptate, officia possimus 
 					temporibus voluptatem laboriosam dignissimos nulla deserunt! Optio.
 				</div>
-				<div class="news4">
+				<div class="news4" id="news4">
 					<h2>News 4</h2> <hr hr class="hrs"><br> 
 					Lorem, ipsum dolor sit amet consectetur adipisicing 
 					elit. Maxime totam esse, doloribus corrupti, corporis officia dolorem consectetur 
@@ -121,58 +120,25 @@
 					adipisicing elit. Soluta accusamus obcaecati repellendus modi? Tenetur consectetur omnis corporis 
 					iure eaque ipsa odio magnam recusandae?
 				</div>
-				<div class="form1">
-					<h1>Form</h1> <hr class="hrs"><br> 
-					<form method="POST">
-						<input
-							type="text"
-							name="name"
-							id="name"
-							placeholder="Name"
-							minlength="3"
-							required
-							style="line-height: 20px;"
-						/><br><br>
-						<input
-							type="tel"
-							name="tel"
-							id="tel"
-							placeholder="Telephone"
-							minlength="11"
-							pattern="\+?389 ?-?[0-9]{2} ?-?[0-9]{3} ?-?[0-9]{3}"
-							title="(+)389 xx xxx xxx or (+)389-xx-xxx-xxx"
-							required
-							style="line-height: 20px;"
-						/><br><br>
-						<input
-							type="email"
-							name="email"
-							id="email"
-							placeholder="e-Mail"
-							required
-							style="line-height: 20px;"
-						/><br><br>
-						<input
-							type="text"
-							name="company"
-							id="company"
-							placeholder="Company (optional)"
-							style="line-height: 20px;"
-						/>
-						<br><br><br>
+				<div class="form1" id="form1">
+					<h1>Form</h1> <hr class="hrs"><br>
+					<form method="POST" id="forma" >
+						<input id="ime" name="ime" type="text" placeholder="Name"><br><br>
+						<input id="email" name="email" type="text" placeholder="e-Mail"><br><br>
+						<input id="phone" name="phone" type="text" placeholder="Telehone"><br><br>
+						<input id="company" name="company" type="text" placeholder="Company (optional)"><br><br>
 						<textarea
 							id="textarea"
 							name="textarea"
 							placeholder="Message text"
-							required
-							
+													
 						></textarea>
-						<br><br>
-						<br>
-						<input type="submit" id="subm" class="subm" />
+						<div id="error"></div>
+						<button type="submit" class="subm" id="subm">Submit</button>
+					</form>
+				</div>
 				</div>
 			</div>
-
 			<div class="sitemap">
 				<div class="fbytgg">
 					<ul class="listmap">
@@ -187,7 +153,6 @@
 				<div class="contact">
 					<ul class="info" style="list-style: none;">
 						<li><label style=" font-weight: bolder; font-size: larger;"><u>CONTACT US</u></label></li><br>
-
 						<li>
 							<label style=" font-weight: bold; font-size: larger;">Phone</label>:<a href="tel:3294230402" style="text-decoration: none;">
 								+3294230402</a
