@@ -1,0 +1,44 @@
+.form1 {
+	text-align: center;
+}
+#ime {
+	text-align: center;
+	width: 90%;
+	line-height: var(--main-height);
+}
+#phone {
+	text-align: center;
+	width: 90%;
+	line-height: var(--main-height);
+}
+#email {
+	text-align: center;
+	width: 90%;
+	line-height: var(--main-height);
+}
+#company {
+	text-align: center;
+	width: 90%;
+	line-height: var(--main-height);
+}
+#textarea {
+	padding-top: 25%;
+	padding-bottom: 25%;
+	width: 90%;
+	max-height: 90%;
+	max-width: 90%;
+}
+.subm {
+	height: 30px;
+	width: 75%;
+	background-color: rgb(38, 4, 94);
+	color: #9ccb40;
+	font-size: 20px;
+	border: 3px solid black;
+	-webkit-text-stroke-width: 0.8px;
+	-webkit-text-stroke-color: black;
+}
+#error{
+	color:  rgb(0, 0, 0);
+	
+}

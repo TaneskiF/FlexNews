@@ -1,0 +1,22 @@
+.nav {
+	background-color: rgb(0, 0, 0);
+	display: flex;
+	min-height: 6vh;
+	width: 100%;
+	justify-content: space-around;
+}
+.links {
+	align-self: center;
+	flex-wrap: wrap;
+}
+.logo {
+	justify-content: flex-end;
+	align-self: center;
+	margin-left: auto;
+}
+.nav a {
+	text-decoration: none;
+	font-size: 24px;
+	padding: 10px;
+	text-transform: uppercase;
+}
